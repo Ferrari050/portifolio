@@ -175,10 +175,6 @@ a {
   margin-left: 10px;
 }
 
-h1, h2, h3{
-  color: #fb0c06;
-}
-
 @media only screen and (max-width: 717px) {
   #openMenu,
   #closeMenu {
