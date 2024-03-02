@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100vw;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  background: #9b642b;
+  display: flex;
+  margin: 3px;
+}
+
+header {
+  height: 100px;
+  flex: 1 1 100vw;
+}
+
+header #logo {
+  display: flex;
+  flex: 0 1 200px;
+  background: #481c00;
+  justify-content: center;
+  align-items: center;
+}
+
+#openMenu,
+#closeMenu {
+  border: none;
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 200px;
+  background: #481c00;
+}
+
+nav a {
+  margin: 0 3%;
+  font-size: 15pt;
+}
+
+main {
+  height: calc(100vh - 224px);
+  flex: 20 1 500px;
+  background-color: #9b642b;
+}
+
+aside {
+  flex: 1 1 200px;
+}
+
+footer {
+  height: 100px;
+  flex: 1 1 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 717px) {
+  #openMenu,
+  #closeMenu {
+    display: block;
+  }
+
+  #openMenu {
+    margin-left: auto;
+  }
+
+  #closeMenu {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+  }
+
+  .listButtonsAside {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90px;
+  }
+
+  .buttonAside {
+	height: 20px;
+	width: 10px;
+
+  }
+
+  nav {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  nav a {
+    margin: 3%;
+  }
+
+  main {
+    height: calc(100vh - 330px);
+  }
+
+  aside {
+    height: 100px;
+  }
+}
+
+.buttonsHeader {
+  display: flex;
+  gap: 8px;
+}
+
+.buttonHeader {
+  width: 100px;
+  font-size: 18px;
+  height: 50px;
+  border-radius: 15px;
+  border-style: none;
+  cursor: pointer;
+  background-color: #eeac57;
+}
+
+.allContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.mainContainer {
+  padding-left: 15px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  padding: 15px;
+  align-items: center;
+}
+
+.listButtonsAside {
+  display: flex;
+  flex: wrap;
+  gap: 5px;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonAside {
+  width: 100px;
+  height: 40px;
+  background-color: #eeac57;
+  border-radius: 15px;
+  border-style: none;
+  cursor: pointer;
+}
+.TitleProjects {
+  padding: 5px;
+}
