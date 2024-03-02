@@ -161,7 +161,8 @@ a {
 
 #logo {
   color: white;
-  font-size: 30px;
+  font-size: 36px;
+  margin-left: 10px;
   font-family: "Anta", sans-serif;
   background-color: #030d4f;
 }
@@ -217,7 +218,7 @@ h1, h2, h3{
   }
 
   .educacao, .experiencia, .cursos {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   nav {
