@@ -175,6 +175,22 @@ a {
   margin-left: 10px;
 }
 
+.darkMode{
+  background-color: #000527;
+  color: #e7edea;
+}
+
+button:hover{
+  transition: 0.1s ease-in-out;
+  transform: scale(1.02);
+}
+
+button:active{
+  transform: scale(0.90);
+  background-color: black;
+  color: white;
+}
+
 @media only screen and (max-width: 717px) {
   #openMenu,
   #closeMenu {

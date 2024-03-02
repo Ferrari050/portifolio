@@ -37,8 +37,8 @@
           <button class="buttonHeader">
             <a href="https://github.com/Ferrari050" target="_blank">Github</a>
           </button>
-          <button class="buttonHeader">Modo Noturno</button>
-          <button class="buttonHeader"><a href="">English Mode</a></button>
+          <button id="darkMode" class="buttonHeader">Modo Noturno</button>
+          <button id="englishMode" class="buttonHeader">English Mode</button>
         </div>
       </nav>
     </header>
@@ -46,32 +46,34 @@
     <main id="mainContainer">
       <div class="allContent">
         <div><h1 class="titulo">Bem vindo(a)!</h1></div>
-        <div class="educacao">
-          <h3>Área Acadêmica:</h3>
+        <div id="education" class="educacao">
+          <h3 id="titleEducation">Área Acadêmica:</h3>
           <ul>
-            <li>Formado em Redes de Computadores pela Fatec de Bauru</li>
+            <li id="formacao">
+              Formado em Redes de Computadores pela Fatec de Bauru
+            </li>
           </ul>
         </div>
         <div class="experiencia">
-          <h3>Experiência:</h3>
+          <h3 id="experience">Experiência:</h3>
           <ul>
-            <li>
+            <li id="hcfmb">
               Analista de sistemas Júnior no Hospital das Clínicas de Botucatu
               (Desde 08/23)
             </li>
-            <li>
+            <li id="isc">
               Programador de sistemas da informação na I.S.C. Tecnologia (07/22
               => 03/23)
             </li>
-            <li>Estagiario da Fatec Bauru (04/22 => 07/22)</li>
+            <li id="fatec">Estagiario da Fatec Bauru (04/22 => 07/22)</li>
           </ul>
         </div>
         <div class="cursos">
-          <h3>Cursos:</h3>
+          <h3 id="courses">Cursos:</h3>
           <ul>
             <li>AWS Cloud Foundations</li>
             <li>Cisco CCNA1</li>
-            <li>TOEIC Mastertest (inglês nível avançado)</li>
+            <li id="toeic">TOEIC Mastertest (inglês nível avançado)</li>
             <li>JavaScript Alura</li>
             <li>Docker Alura</li>
             <li>NodeJS Alura</li>
@@ -80,10 +82,11 @@
       </div>
     </main>
 
-    <aside>
-      <h3 class="titleProjects">Principais Projetos:</h3>
+    <aside id="aside">
+      <h3 id="mainProjects" class="titleProjects">Principais Projetos:</h3>
       <div class="projects">
         <a
+          id="tictactoe"
           class="anchorAside"
           href="https://ferrari050.github.io/JogoDaVelha/"
           target="_blank"
@@ -112,6 +115,7 @@
         >
 
         <a
+          id="calculator"
           class="anchorAside"
           href="https://ferrari050.github.io/calculadora/"
           target="_blank"
@@ -120,9 +124,9 @@
       </div>
     </aside>
 
-    <footer>
+    <footer id="footer">
       <div class="contact">
-        <h2>Contato:</h2>
+        <h2 id="contact">Contato:</h2>
         <ul>
           <li>LinkedIn - https://www.linkedin.com/in/joaoferrari066</li>
           <li>Github - https://github.com/Ferrari050</li>
