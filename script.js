@@ -47,6 +47,7 @@ buttonEnglishMode.addEventListener("click", () => {
   const mainProjects = document.getElementById("mainProjects");
   const tictactoe = document.getElementById("tictactoe");
   const calculator = document.getElementById("calculator");
+  const welcome = document.getElementById("welcome");
   if (textContentTitleEducation.classList.contains("english")) {
     textContentTitleEducation.classList.remove("english");
     location.reload();
@@ -68,5 +69,6 @@ buttonEnglishMode.addEventListener("click", () => {
 	tictactoe.innerText = "Tic tac Toe";
 	calculator.innerText = "Calculator";
 	buttonDarkMode.innerText = "Dark Mode";
+  welcome.innerText = "Welcome!";
 }
 });
