@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Anta", sans-serif;
 }
 
 li {
@@ -15,16 +15,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 100vw;
+  background-color: #e7edea;
 }
 
-header,
-nav,
-main,
-aside,
-footer {
-  background: #9b642b;
+header {
+  background-color: #030d4f;
   display: flex;
-  margin: 3px;
+  border-bottom: 5px #fb0c06 solid;
+}
+
+aside{
+  border-bottom: 3px #fb0c06 solid;
+  background-color: #e7edea;
+  color: black;
+}
+
+nav,
+main {
+  background: #030d4f;
+  display: flex;
 }
 
 header {
@@ -35,7 +44,7 @@ header {
 header #logo {
   display: flex;
   flex: 0 1 200px;
-  background: #481c00;
+  background: #030d4f;
   justify-content: center;
   align-items: center;
 }
@@ -49,13 +58,16 @@ header #logo {
   padding: 0px 5px 0px 5px;
   cursor: pointer;
   display: none;
+  background-color: #e7edea1c;
 }
 
 nav {
   justify-content: flex-end;
   align-items: center;
   flex: 1 1 200px;
-  background: #481c00;
+  background: #030d4f;
+  flex-direction: column;
+  display: flex;
 }
 
 nav a {
@@ -66,21 +78,104 @@ nav a {
 main {
   height: calc(100vh - 224px);
   flex: 20 1 500px;
-  background-color: #9b642b;
+  background-color: #e7edea;
+  border-right: 3px #fb0c06 solid;
+  border-bottom: 3px #fb0c06 solid;
 }
 
 aside {
   flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
   height: 100px;
   flex: 1 1 100vw;
+  padding-right: 5px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.buttonsHeader {
+  display: flex;
+  gap: 8px;
+}
+
+.buttonHeader {
+  width: 100px;
+  font-size: 18px;
+  height: 50px;
+  border-radius: 15px;
+  border-style: none;
+  cursor: pointer;
+  background-color: #e7edea;
+  color: black;
+}
+
+#mainContainer {
+  padding-left: 15px; 
+}
+
+.allContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.listButtonsAside {
+  display: flex;
+  flex: wrap;
+  gap: 5px;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.anchorAside {
+  border-radius: 15px;
+}
+.titleProjects {
+  padding: 5px;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding-top: 5px;
+}
+
+#logo {
+  color: white;
+  font-size: 30px;
+  font-family: "Anta", sans-serif;
+  background-color: #030d4f;
+}
+
+#menu {
+  justify-content: center;
+}
+
+.contact{
+  margin-left: 10px;
+}
+
+h1, h2, h3{
+  color: #fb0c06;
 }
 
 @media only screen and (max-width: 717px) {
@@ -99,7 +194,7 @@ a {
     top: 15px;
   }
 
-  .listButtonsAside {
+  .projects {
     display: flex;
     gap: 5px;
     flex-direction: row;
@@ -108,10 +203,21 @@ a {
     height: 90px;
   }
 
-  .buttonAside {
-	height: 20px;
-	width: 10px;
+  .anchorAside {
+    font-size: 11px;
+    width: 65px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #030d4f;
+    border-radius: 15px;
+    color: white;
+  }
 
+  .educacao, .experiencia, .cursos {
+    font-size: 18px;
   }
 
   nav {
@@ -128,6 +234,10 @@ a {
     transition: 0.3s;
   }
 
+  .buttonsHeader {
+    flex-direction: column;
+  }
+
   nav a {
     margin: 3%;
   }
@@ -137,66 +247,15 @@ a {
   }
 
   aside {
-    height: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    padding: 15px;
+    align-items: center;
   }
-}
 
-.buttonsHeader {
-  display: flex;
-  gap: 8px;
-}
-
-.buttonHeader {
-  width: 100px;
-  font-size: 18px;
-  height: 50px;
-  border-radius: 15px;
-  border-style: none;
-  cursor: pointer;
-  background-color: #eeac57;
-}
-
-.allContent {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 13px;
-}
-
-.titulo {
-  text-align: center;
-}
-
-.mainContainer {
-  padding-left: 15px;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  padding: 3px;
-  padding: 15px;
-  align-items: center;
-}
-
-.listButtonsAside {
-  display: flex;
-  flex: wrap;
-  gap: 5px;
-  flex-direction: column;
-  padding: 15px;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttonAside {
-  width: 100px;
-  height: 40px;
-  background-color: #eeac57;
-  border-radius: 15px;
-  border-style: none;
-  cursor: pointer;
-}
-.TitleProjects {
-  padding: 5px;
+  footer {
+    font-size: 14px;
+  }
 }
