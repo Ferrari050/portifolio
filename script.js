@@ -18,7 +18,6 @@ closeMenu.addEventListener("click", () => {
 });
 
 const buttonDarkMode = document.getElementById("darkMode");
-console.log(buttons);
 buttonDarkMode.addEventListener("click", () => {
   const asideColor = document.getElementById("aside");
   const mainColor = document.getElementById("mainContainer");
