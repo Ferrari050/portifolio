@@ -35,40 +35,26 @@ buttonDarkMode.addEventListener("click", () => {
 
 const buttonEnglishMode = document.getElementById("englishMode");
 buttonEnglishMode.addEventListener("click", () => {
-  const textContentTitleEducation = document.getElementById("titleEducation");
-  const formacaoFaculdade = document.getElementById("formacao");
-  const jobExperience = document.getElementById("experience");
-  const experienceHcfmb = document.getElementById("hcfmb");
-  const experienceIsc = document.getElementById("isc");
-  const experienceFatec = document.getElementById("fatec");
-  const courses = document.getElementById("courses");
-  const toeic = document.getElementById("toeic");
+  const textContentTitleEducation = document.getElementById("idCurriculum");
   const contact = document.getElementById("contact");
   const mainProjects = document.getElementById("mainProjects");
   const tictactoe = document.getElementById("tictactoe");
   const calculator = document.getElementById("calculator");
   const welcome = document.getElementById("welcome");
+  const curriculo = document.getElementById("curriculo");
   if (textContentTitleEducation.classList.contains("english")) {
     textContentTitleEducation.classList.remove("english");
     location.reload();
   } else {
     textContentTitleEducation.classList.add("english");
-    textContentTitleEducation.innerText = "Academic Area";
-    formacaoFaculdade.innerText =
-      "Graduated in Computer Networks from Fatec de Bauru";
-    jobExperience.innerText = "Job Experience :";
-    experienceHcfmb.innerText =
-      "Junior systems analyst at Hospital das Clínicas de Botucatu (Since 08/23)";
-    experienceIsc.innerText =
-      "Information systems programmer at I.S.C. Tecnologia (07/22 => 03/23)";
-    experienceFatec.innerText = "Intern at Fatec Bauru (04/22 => 07/22)";
-    courses.innerText = "Courses : ";
-	toeic.innerText = "TOEIC Mastertest (advanced english level)";
-	contact.innerText = "Contact : ";
-	mainProjects.innerText = "Main Projects : ";
-	tictactoe.innerText = "Tic tac Toe";
-	calculator.innerText = "Calculator";
-	buttonDarkMode.innerText = "Dark Mode";
-  welcome.innerText = "Welcome!";
-}
+    idCurriculum.innerText = "curriculum";
+    textContentTitleEducation.innerText =
+      "Hello World! My name is João Vitor Mendes Ferrari, I was born in 2002. And, since So, my passion for technology is only increasing! I study various areas of technology, such as: Computer networks,development, IOT, network and application security, among others... I'm a determined and focused person, I have passion and ease inlearn new things, especially in my area. Recently, I discovered the part of all of those, that I most identify, which is web programming. I've been studying for a while, taking courses on the platform Alura and, mainly, I have been doing some projects by myself. I'm looking forward to my first opportunity to become a front-end developer and consolidate knowledge and grow professionally. For more detailed information, see my curriculum by clicking on the blue colored text.";
+    mainProjects.innerText = "Main Projects : ";
+    tictactoe.innerText = "Tic tac Toe";
+    calculator.innerText = "Calculator";
+    buttonDarkMode.innerText = "Dark Mode";
+    welcome.innerText = "Welcome!";
+    contact.innerText = "Contact : "
+  }
 });

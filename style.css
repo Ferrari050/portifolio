@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Anta", sans-serif;
+  line-height: 30px;
 }
 
 li {
@@ -15,18 +16,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 100vw;
-  background-color: #e7edea;
+  background-color: lightgray;
 }
 
 header {
   background-color: #030d4f;
   display: flex;
-  border-bottom: 5px #fb0c06 solid;
+  border-bottom: 5px gray solid;
+  height: 100px;
+  flex: 1 1 100vw;
+  justify-content: space-between;
 }
 
-aside{
-  border-bottom: 3px #fb0c06 solid;
-  background-color: #e7edea;
+aside {
+  border-bottom: 3px gray solid;
+  border-top: 3px gray solid;
+  background-color: lightgray;
   color: black;
 }
 
@@ -36,17 +41,17 @@ main {
   display: flex;
 }
 
-header {
-  height: 100px;
-  flex: 1 1 100vw;
-}
-
 header #logo {
   display: flex;
   flex: 0 1 200px;
   background: #030d4f;
   justify-content: center;
   align-items: center;
+}
+
+#welcome {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #openMenu,
@@ -58,12 +63,20 @@ header #logo {
   padding: 0px 5px 0px 5px;
   cursor: pointer;
   display: none;
-  background-color: #e7edea1c;
+  color: white;
+  margin-right: 15px;
+}
+
+.myDesc{
+  font-size: 22px;
+  line-height: 3cap;
+}
+
+.anchorCurriculo{
+  color: blue;
 }
 
 nav {
-  justify-content: flex-end;
-  align-items: center;
   flex: 1 1 200px;
   background: #030d4f;
   flex-direction: column;
@@ -78,21 +91,22 @@ nav a {
 main {
   height: calc(100vh - 224px);
   flex: 20 1 500px;
-  background-color: #e7edea;
-  border-right: 3px #fb0c06 solid;
-  border-bottom: 3px #fb0c06 solid;
+  background-color: lightgray;
+  border: 3px gray solid;
 }
 
 aside {
   flex: 1 1 200px;
   display: flex;
   flex-direction: column;
+  justify-content: left;
 }
 
 footer {
-  height: 100px;
+  height: 140px;
   flex: 1 1 100vw;
   padding-right: 5px;
+  font-weight: 10px;
 }
 
 a {
@@ -103,6 +117,8 @@ a {
 .buttonsHeader {
   display: flex;
   gap: 8px;
+  justify-content: right;
+  padding-right: 15px;
 }
 
 .buttonHeader {
@@ -114,10 +130,11 @@ a {
   cursor: pointer;
   background-color: #e7edea;
   color: black;
+  line-height: 20px;
 }
 
 #mainContainer {
-  padding-left: 15px; 
+  padding-left: 15px;
 }
 
 .allContent {
@@ -127,8 +144,9 @@ a {
   font-size: 20px;
 }
 
-.titulo {
-  text-align: center;
+.titulo,
+h3 {
+  text-align: left;
 }
 
 .listButtonsAside {
@@ -146,17 +164,20 @@ a {
   border-radius: 15px;
 }
 .titleProjects {
-  padding: 5px;
-  text-align: center;
+  padding-left: 15px;
+  padding-top: 15px;
+  text-align: left;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 6px;
   padding-top: 5px;
+  align-items: left;
+  justify-content: left;
+  padding: 15px;
+  color: #15258f;
 }
 
 #logo {
@@ -171,30 +192,41 @@ a {
   justify-content: center;
 }
 
-.contact{
+.contact {
   margin-left: 10px;
 }
 
-.darkMode{
-  background-color: #000527;
+.darkMode {
+  background-color: #000527ea;
   color: #e7edea;
 }
 
-button:hover{
+button:hover {
   transition: 0.1s ease-in-out;
   transform: scale(1.02);
+  background-color: rgba(0, 0, 0, 0.726);
+  color: white;
 }
 
-button:active{
-  transform: scale(0.90);
+button:active {
+  transform: scale(0.9);
   background-color: black;
   color: white;
+}
+
+.footerLink{
+  color: #15258f;
 }
 
 @media only screen and (max-width: 717px) {
   #openMenu,
   #closeMenu {
     display: block;
+  }
+
+  #openMenu:hover {
+    background-color: gray;
+    border-radius: 15px;
   }
 
   #openMenu {
@@ -205,6 +237,8 @@ button:active{
     position: fixed;
     right: 15px;
     top: 15px;
+    justify-content: center;
+    padding-top: 15px;
   }
 
   .projects {
@@ -214,12 +248,14 @@ button:active{
     flex-wrap: wrap;
     width: 100%;
     height: 90px;
+    justify-content: left;
+    padding: 5px;
   }
 
   .anchorAside {
     font-size: 11px;
     width: 65px;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -227,17 +263,21 @@ button:active{
     background-color: #030d4f;
     border-radius: 15px;
     color: white;
+    line-height: 13px;
   }
 
-  .educacao, .experiencia, .cursos {
+  .educacao,
+  .experiencia,
+  .cursos {
     font-size: 13px;
+    line-height: 30px;
   }
 
   nav {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(32, 32, 32, 0.6);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -249,6 +289,17 @@ button:active{
 
   .buttonsHeader {
     flex-direction: column;
+    gap: 30px;
+    
+  }
+
+  .buttonHeader {
+    width: 200px;
+  
+  }
+
+  .buttonHeader:hover {
+    color: white;
   }
 
   nav a {
@@ -257,18 +308,32 @@ button:active{
 
   main {
     height: calc(100vh - 330px);
+    border: none;
+    min-height: 750px;
   }
 
-  aside {
+  .myDesc{
+    font-size: 16px;
+  }
+
+  #aside {
     height: 120px;
     display: flex;
     flex-direction: column;
     padding: 3px;
     padding: 15px;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    line-height: 15px;
+    min-width: 385px;
   }
 
   footer {
     font-size: 14px;
+  }
+
+  #mainProjects {
+    text-align: left;
+    padding: 9px;
   }
 }
