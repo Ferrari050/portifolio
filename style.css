@@ -119,6 +119,7 @@ a {
   gap: 8px;
   justify-content: right;
   padding-right: 15px;
+  color: black;
 }
 
 .buttonHeader {
@@ -216,6 +217,14 @@ button:active {
 
 .footerLink{
   color: #15258f;
+}
+
+.buttonAnchorCurriculo{
+  color: black;
+}
+
+.anchorCurriculo:hover{
+  color: white;
 }
 
 @media only screen and (max-width: 717px) {

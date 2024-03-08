@@ -41,7 +41,7 @@ buttonEnglishMode.addEventListener("click", () => {
   const tictactoe = document.getElementById("tictactoe");
   const calculator = document.getElementById("calculator");
   const welcome = document.getElementById("welcome");
-  const curriculo = document.getElementById("curriculo");
+  const idCurriculo = document.getElementById("idCurriculo");
   if (textContentTitleEducation.classList.contains("english")) {
     textContentTitleEducation.classList.remove("english");
     location.reload();
@@ -49,12 +49,13 @@ buttonEnglishMode.addEventListener("click", () => {
     textContentTitleEducation.classList.add("english");
     idCurriculum.innerText = "curriculum";
     textContentTitleEducation.innerText =
-      "Hello World! My name is João Vitor Mendes Ferrari, I was born in 2002. And, since So, my passion for technology is only increasing! I study various areas of technology, such as: Computer networks,development, IOT, network and application security, among others... I'm a determined and focused person, I have passion and ease inlearn new things, especially in my area. Recently, I discovered the part of all of those, that I most identify, which is web programming. I've been studying for a while, taking courses on the platform Alura and, mainly, I have been doing some projects by myself. I'm looking forward to my first opportunity to become a front-end developer and consolidate knowledge and grow professionally. For more detailed information, see my curriculum by clicking on the blue colored text.";
+      "Hello World! My name is João Vitor Mendes Ferrari, I was born in 2002. And, since So, my passion for technology is only increasing! I study various areas of technology, such as: Computer networks,development, IOT, network and application security, among others... I'm a determined and focused person, I have passion and ease inlearn new things, especially in my area. Recently, I discovered the part of all of those, that I most identify, which is web programming. I've been studying for a while, taking courses on the platform Alura and, mainly, I have been doing some projects by myself. I'm looking forward to my first opportunity to become a front-end developer and consolidate knowledge and grow professionally.";
     mainProjects.innerText = "Main Projects : ";
     tictactoe.innerText = "Tic tac Toe";
     calculator.innerText = "Calculator";
     buttonDarkMode.innerText = "Dark Mode";
     welcome.innerText = "Welcome!";
-    contact.innerText = "Contact : "
+    contact.innerText = "Contact : ";
+    idCurriculo.innerText = "Curriculum";
   }
 });
